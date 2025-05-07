@@ -4,49 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skin Cancer Detection Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS -->
 </head>
 <body>
-    <header>
-        <h1>Skin Cancer Detection Project</h1>
-        <div class="nav">
-            <button onclick="window.location.href = 'schedule.html';">Schedule</button>
-            <button onclick="window.location.href = 'logs.html';">Logs</button>
-            <button onclick="window.location.href = 'progress.html';">Progress Report</button>
+
+<!-- Navigation Bar -->
+<div class="nav">
+    <button onclick="window.location.href='index.html'">Overview</button>
+    <button onclick="window.location.href='schedule.html'">Schedule</button>
+    <button onclick="window.location.href='logs.html'">Logs</button>
+    <button onclick="window.location.href='progress.html'">Progress</button>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <div id="overview">
+        <h1>Overview</h1>
+        <div class="section">
+            <h2>Aim</h2>
+            <p>To investigate how image augmentation techniques impact skin cancer detection in AI models.</p>
         </div>
-    </header>
+        <div class="section">
+            <h2>Method</h2>
+            <p>The method involves training a deep learning model with augmented images and testing it against a dataset of skin cancer images.</p>
+        </div>
+        <div class="section">
+            <h2>Variables</h2>
+            <p>Independent Variable: Type of augmentation applied. Dependent Variable: Accuracy of the model.</p>
+        </div>
+    </div>
+</div>
 
-    <main>
-        <!-- Overview Section -->
-        <section id="overview">
-            <h2>Overview</h2>
-            <div id="aim">
-                <h3>Aim</h3>
-                <p>Our goal is to explore how augmenting image data can help a deep learning model more accurately detect skin cancer in real-world scenarios, making it more accessible and affordable for people worldwide.</p>
-            </div>
-
-            <div id="method">
-                <h3>Method</h3>
-                <p>We are training a deep learning model using augmented skin lesion images to improve its ability to generalize across various environmental conditions. Our research focuses on exploring different image augmentations and optimization techniques to improve model performance.</p>
-            </div>
-
-            <div id="variables">
-                <h3>Variables</h3>
-                <p>Independent Variable: Image augmentations (e.g., rotation, zooming, flipping). <br>
-                   Dependent Variable: Model accuracy, loss, and AUC score.</p>
-            </div>
-        </section>
-        
-        <!-- Other Sections (optional) -->
-        <section id="other-info">
-            <h2>Additional Information</h2>
-            <p>Our project aims to reduce unnecessary dermatological visits and ensure early detection of skin cancer in underserved areas.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>Skin Cancer Detection Project | Your Name</p>
-    </footer>
 </body>
 </html>
->

@@ -1,63 +1,101 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    color: #000;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
+/* Header styles */
 header {
-    background-color: #1E3A8A;
+    background-color: #0077b6;
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
-header .nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+header h1 {
+    margin: 0;
+    font-size: 36px;
 }
 
-header .nav button {
-    background-color: #3B82F6;
+.nav {
+    margin-top: 15px;
+}
+
+.nav button {
+    background-color: #00b4d8;
     color: white;
-    border: none;
     padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
 }
 
-header .nav button:hover {
-    background-color: #2563EB;
+.nav button:hover {
+    background-color: #0096c7;
 }
 
+/* Main content styles */
 main {
     padding: 20px;
-    margin: 20px;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+main h3 {
+    font-size: 22px;
+    color: #444;
 }
 
 section {
     margin-bottom: 20px;
 }
 
-h2 {
-    color: #1E3A8A;
+section p {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-h3 {
-    color: #1D4ED8;
-}
-
+/* Footer styles */
 footer {
+    background-color: #0077b6;
+    color: white;
     text-align: center;
     padding: 10px;
-    background-color: #1E3A8A;
-    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
 }
 
-footer p {
-    margin: 0;
+/* Make sure the site layout is responsive */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .nav button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    main h3 {
+        font-size: 20px;
+    }
 }

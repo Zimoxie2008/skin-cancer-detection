@@ -28,6 +28,9 @@ p {
     background-color: #0044cc; /* Blue background for navigation */
     padding: 10px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav button {

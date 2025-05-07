@@ -1,101 +1,178 @@
-/* General styles */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #000;
+    background-color: #f4f4f9;
+    color: #333; /* Black text */
     margin: 0;
     padding: 0;
 }
 
-/* Header styles */
-header {
-    background-color: #0077b6;
-    color: white;
-    padding: 20px;
+h1, h2, h3, h4 {
+    font-family: 'Helvetica', sans-serif;
+    color: #0044cc; /* Blue color for headings */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Navigation Styles */
+.nav {
+    background-color: #0044cc; /* Blue background for navigation */
+    padding: 10px 0;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-.nav {
-    margin-top: 15px;
-}
-
 .nav button {
-    background-color: #00b4d8;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 5px;
-    transition: background-color 0.3s ease;
+    background-color: #0044cc; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Spacing inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 10px; /* Spacing between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .nav button:hover {
-    background-color: #0096c7;
+    background-color: #0033aa; /* Darker blue on hover */
 }
 
-/* Main content styles */
-main {
+.nav button:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.nav a {
+    text-decoration: none; /* Remove underlines */
+}
+
+/* Main Content Styling */
+.container {
     padding: 20px;
-    background-color: white;
-    margin: 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0044cc;
+}
+
+.section p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Overview Section */
+#overview .section {
+    background-color: #fff;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main h2 {
-    font-size: 28px;
-    color: #333;
+#overview .section h2 {
+    color: #0044cc;
 }
 
-main h3 {
-    font-size: 22px;
-    color: #444;
+/* Schedule Section */
+#schedule .section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-section {
-    margin-bottom: 20px;
+#schedule .section h2 {
+    color: #0044cc;
 }
 
-section p {
-    font-size: 16px;
-    line-height: 1.6;
+/* Logs Section */
+#logs .section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styles */
-footer {
-    background-color: #0077b6;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+#logs .section h2 {
+    color: #0044cc;
+}
+
+/* Progress Section */
+#progress .section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#progress .section h2 {
+    color: #0044cc;
+}
+
+/* Table Styling for Logs and Progress */
+table {
     width: 100%;
-    font-size: 14px;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
-/* Make sure the site layout is responsive */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
+table, th, td {
+    border: 1px solid #ddd;
+}
 
-    .nav button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
 
-    main h2 {
-        font-size: 24px;
-    }
+th {
+    background-color: #0044cc;
+    color: white;
+}
 
-    main h3 {
-        font-size: 20px;
-    }
+td {
+    background-color: #f9f9f9;
+}
+
+/* Input and File Upload Styling for Logs */
+input[type="file"] {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input[type="file"], button {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="file"], button {
+    font-size: 16px;
+}
+
+/* Graph Styling */
+.graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.graph img {
+    max-width: 100%;
+    height: auto;
 }

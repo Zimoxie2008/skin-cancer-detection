@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
+        <h1>Skin Cancer Detection Project</h1>
         <div class="nav">
-            <button onclick="window.location.href = 'overview.html';">Overview</button>
             <button onclick="window.location.href = 'schedule.html';">Schedule</button>
             <button onclick="window.location.href = 'logs.html';">Logs</button>
             <button onclick="window.location.href = 'progress.html';">Progress Report</button>
@@ -17,8 +17,31 @@
     </header>
 
     <main>
-        <h1>Welcome to the Skin Cancer Detection Project</h1>
-        <p>This project aims to explore ways to improve skin cancer detection using AI and deep learning techniques.</p>
+        <!-- Overview Section -->
+        <section id="overview">
+            <h2>Overview</h2>
+            <div id="aim">
+                <h3>Aim</h3>
+                <p>Our goal is to explore how augmenting image data can help a deep learning model more accurately detect skin cancer in real-world scenarios, making it more accessible and affordable for people worldwide.</p>
+            </div>
+
+            <div id="method">
+                <h3>Method</h3>
+                <p>We are training a deep learning model using augmented skin lesion images to improve its ability to generalize across various environmental conditions. Our research focuses on exploring different image augmentations and optimization techniques to improve model performance.</p>
+            </div>
+
+            <div id="variables">
+                <h3>Variables</h3>
+                <p>Independent Variable: Image augmentations (e.g., rotation, zooming, flipping). <br>
+                   Dependent Variable: Model accuracy, loss, and AUC score.</p>
+            </div>
+        </section>
+        
+        <!-- Other Sections (optional) -->
+        <section id="other-info">
+            <h2>Additional Information</h2>
+            <p>Our project aims to reduce unnecessary dermatological visits and ensure early detection of skin cancer in underserved areas.</p>
+        </section>
     </main>
 
     <footer>
@@ -26,3 +49,4 @@
     </footer>
 </body>
 </html>
+>

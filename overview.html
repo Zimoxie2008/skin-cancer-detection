@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - Skin Cancer Detection Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <button onclick="window.location.href = 'overview.html';">Overview</button>
+            <button onclick="window.location.href = 'schedule.html';">Schedule</button>
+            <button onclick="window.location.href = 'logs.html';">Logs</button>
+            <button onclick="window.location.href = 'progress.html';">Progress Report</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="aim">
+            <h2>Aim</h2>
+            <p>
+                The goal of this project is to develop an AI system capable of detecting skin cancer from images of pigmented skin lesions. This system will be trained using different techniques, specifically focusing on how image augmentation affects model accuracy and how model optimization can improve performance.
+            </p>
+        </section>
+
+        <section id="part-1">
+            <h2>Part 1: Effect of Augmentation</h2>
+            <div class="section-content">
+                <h3>Aim</h3>
+                <p>To investigate how different image augmentation techniques influence the accuracy of the model in detecting skin cancer.</p>
+                
+                <h3>Method</h3>
+                <p>The model will be trained on images with various augmentation techniques, including rotation, flipping, and color adjustments. Each set of augmented images will be used to see how the model responds and performs on unseen data.</p>
+
+                <h3>Variables</h3>
+                <p>
+                    <strong>Independent Variable:</strong> Augmentation techniques applied to the training data (e.g., rotation, flipping, color variations).
+                    <br>
+                    <strong>Dependent Variable:</strong> Model accuracy (e.g., AUC, loss).
+                    <br>
+                    <strong>Control Variables:</strong> Model architecture, learning rate, dataset.
+                </p>
+            </div>
+        </section>
+
+        <section id="part-2">
+            <h2>Part 2: Model Optimization</h2>
+            <div class="section-content">
+                <h3>Aim</h3>
+                <p>To investigate how different model optimization techniques (e.g., learning rate schedules, weight decay) affect the performance of the model in detecting skin cancer.</p>
+
+                <h3>Method</h3>
+                <p>The model will be optimized using different techniques, such as learning rate scheduling and weight decay. The impact of these optimizations will be measured by comparing performance on a validation set after each change.</p>
+
+                <h3>Variables</h3>
+                <p>
+                    <strong>Independent Variable:</strong> Optimization techniques (e.g., learning rate scheduler, weight decay).
+                    <br>
+                    <strong>Dependent Variable:</strong> Model performance metrics (e.g., accuracy, AUC, loss).
+                    <br>
+                    <strong>Control Variables:</strong> Augmentation, model architecture, dataset.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Skin Cancer Detection Project | Your Name</p>
+    </footer>
+</body>
+
+</html>

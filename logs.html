@@ -1,53 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logs</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Skin Cancer Detection with AI</h1>
-    <nav>
-        <button onclick="window.location.href='index.html'">Overview</button>
-        <button onclick="window.location.href='schedule.html'">Schedule</button>
-        <button onclick="window.location.href='logs.html'">Logs</button>
-        <button onclick="window.location.href='progress.html'">Progress Report</button>
-    </nav>
+<nav class="navbar">
+    <div class="nav-title">Skin Cancer Project</div>
+    <div class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="logs.html">Logs</a>
+        <a href="progress.html">Progress</a>
+    </div>
+</nav>
+
+<header class="header">
+    <h1>Logs</h1>
 </header>
-<main>
-    <h2>Logs</h2>
-    <p>Upload your Excel data file here and visualize the training/validation results.</p>
-    <input type="file" id="fileInput">
-    <div id="chartContainer"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-    document.getElementById('fileInput').addEventListener('change', function(event) {
-        const file = event.target.files[0];
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const data = e.target.result.split(/\r?\n/).map(line => line.split(','));
-            const labels = data.slice(1).map(row => row[0]);
-            const train = data.slice(1).map(row => parseFloat(row[1]));
-            const val = data.slice(1).map(row => parseFloat(row[2]));
-
-            const ctx = document.createElement('canvas');
-            document.getElementById('chartContainer').appendChild(ctx);
-
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: labels,
-                    datasets: [
-                        { label: 'Training Accuracy', data: train, borderColor: '#3498db', fill: false },
-                        { label: 'Validation Accuracy', data: val, borderColor: '#2ecc71', fill: false }
-                    ]
-                }
-            });
-        };
-        reader.readAsText(file);
-    });
-    </script>
+<main class="container">
+    <section class="card">
+        <h2>Upload Logs</h2>
+        <input type="file" accept=".csv, .xlsx">
+        <p>Upload your Excel or CSV logs here to visualize training and validation results (feature coming soon).</p>
+    </section>
 </main>
 </body>
 </html>

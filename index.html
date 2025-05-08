@@ -4,36 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skin Cancer Detection Project</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navigation Bar -->
-<div class="nav">
-    <button onclick="window.location.href='index.html'">Overview</button>
-    <button onclick="window.location.href='schedule.html'">Schedule</button>
-    <button onclick="window.location.href='logs.html'">Logs</button>
-    <button onclick="window.location.href='progress.html'">Progress</button>
-</div>
+<nav class="navbar">
+    <div class="nav-title">Skin Cancer Project</div>
+    <div class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="logs.html">Logs</a>
+        <a href="progress.html">Progress</a>
+    </div>
+</nav>
 
-<!-- Main Content -->
-<div class="container">
-    <div id="overview">
-        <h1>Overview</h1>
-        <div class="section">
-            <h2>Aim</h2>
-            <p>To investigate how image augmentation techniques impact skin cancer detection in AI models.</p>
+<header class="header">
+    <h1>Skin Cancer Detection Project</h1>
+    <p><strong>Your Name</strong>, Grade 12 Science Fair</p>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>Project Overview</h2>
+        <p>This project investigates how image augmentation and optimization affect AI models in skin cancer detection. We aim to improve accuracy using various techniques on a public dataset.</p>
+    </section>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>Aim</h3>
+            <p>To explore how augmentation and optimization improve skin cancer detection in images.</p>
         </div>
-        <div class="section">
-            <h2>Method</h2>
-            <p>The method involves training a deep learning model with augmented images and testing it against a dataset of skin cancer images.</p>
+        <div class="card">
+            <h3>Method</h3>
+            <p>Train models on augmented data, compare results, and fine-tune with learning rate schedulers and mixed precision.</p>
         </div>
-        <div class="section">
-            <h2>Variables</h2>
-            <p>Independent Variable: Type of augmentation applied. Dependent Variable: Accuracy of the model.</p>
+        <div class="card">
+            <h3>Variables</h3>
+            <p>Independent: Augmentation type, optimization settings<br>Dependent: Model accuracy<br>Control: Dataset, architecture</p>
         </div>
     </div>
-</div>
+</main>
 
 </body>
 </html>

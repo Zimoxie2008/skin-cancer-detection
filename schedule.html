@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedule</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schedule | Skin Cancer Detection Project</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav class="navbar">
-    <div class="nav-title">Skin Cancer Project</div>
-    <div class="nav-links">
-        <a href="index.html">Overview</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="logs.html">Logs</a>
-        <a href="progress.html">Progress</a>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Skin Cancer Detection</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a class="active" href="schedule.html">Schedule</a></li>
+          <li><a href="logs.html">Logs</a></li>
+          <li><a href="progress.html">Progress Report</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="page-title">🗓️ Project Schedule</h2>
+
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Activities</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Week 1</td>
+          <td>Data preparation and augmentation (completion of Part One of the project)</td>
+        </tr>
+        <tr>
+          <td>Week 2</td>
+          <td>Begin Part Two by testing learning rate schedulers (first independent variable)</td>
+        </tr>
+        <tr>
+          <td>Week 3</td>
+          <td>Begin testing for advanced optimisers (second independent variable)</td>
+        </tr>
+        <tr>
+          <td>Week 4</td>
+          <td>Introduction of regularisation methods (third independent variable)</td>
+        </tr>
+        <tr>
+          <td>Week 5</td>
+          <td>Begin testing for mixed precision training (fourth independent variable)</td>
+        </tr>
+        <tr>
+          <td>Weeks 6–8</td>
+          <td>Exam weeks, buffer zone for project — finalise tests, update website, report, and poster</td>
+        </tr>
+        <tr>
+          <td>Weeks 8–9</td>
+          <td>Formulate the final model using insights from previous tests for highest accuracy</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Skin Cancer Detection Project</p>
     </div>
-</nav>
-
-<header class="header">
-    <h1>Project Schedule</h1>
-</header>
-
-<main class="container">
-    <section class="card">
-        <h2>Timeline</h2>
-        <p>Week 1-2: Data preparation and augmentation <br>
-        Week 3-4: Model training and optimization <br>
-        Week 5: Evaluation and analysis <br>
-        Week 6: Final report and presentation</p>
-    </section>
-</main>
+  </footer>
 </body>
 </html>
